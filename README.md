@@ -62,7 +62,7 @@ Automates:
 - **Compilation** of all C++ programs.
 - **Execution** of simulations.
 - **Data visualization using Python.**
-- 
+  
 ### The methods for using makefile for running the code are in the individual Readme of each problem.
 
 
