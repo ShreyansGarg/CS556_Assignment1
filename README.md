@@ -66,7 +66,7 @@ Automates:
 ### The methods for using makefile for running the code are in the individual Readme of each problem.
 
 
-### ** View the Results**
+### View the Results
 - **Bank Teller Results:** `report.txt`.
 - **Call Center Results:** `call_center_simulation_results.txt`.
 - **Coffee Shop Results:** `coffee_shop_simulation_results.txt`.
