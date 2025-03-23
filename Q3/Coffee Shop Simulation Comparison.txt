@@ -1,0 +1,63 @@
+ Coffee Shop Simulation Comparison
+
+ Comparison of Queue Simulation Results (With vs Without Reneging)
+
+Key Performance Metrics
+
+| Configuration                 | Without Reneging        | With Reneging (5-min threshold) |
+|-------------------------------|--------------------------|---------------------------------|
+| **M/M/1, μ = 15 (Baseline)**  |                          |                                 |
+| Avg. Wait Time                | 10.47 minutes           | 1.07 minutes                    |
+| Avg. System Time              | 14.37 minutes           | 4.78 minutes                    |
+| Utilization Factor            | 69.71%                  | 52.25%                          |
+| Max Queue Length              | 11 customers            | 7 customers                     |
+| Abandonment Rate              | N/A                     | 17.60%                          |
+| Lost Revenue                  | N/A                     | $440.00                         |
+| Total Revenue                 | $2,500.00               | $2,060.00                       |
+|                               |                          |                                 |
+| **M/M/1, μ = 20 (Faster)**    |                          |                                 |
+| Avg. Wait Time                | 1.97 minutes            | 0.78 minutes                    |
+| Avg. System Time              | 4.80 minutes            | 3.49 minutes                    |
+| Utilization Factor            | 44.31%                  | 41.93%                          |
+| Max Queue Length              | 6 customers             | 5 customers                     |
+| Abandonment Rate              | N/A                     | 9.20%                           |
+| Lost Revenue                  | N/A                     | $230.00                         |
+| Total Revenue                 | $2,500.00               | $2,270.00                       |
+|                               |                          |                                 |
+| **M/M/1, μ = 12 (Slower)**    |                          |                                 |
+| Avg. Wait Time                | 34.50 minutes           | 1.03 minutes                    |
+| Avg. System Time              | 40.02 minutes           | 6.08 minutes                    |
+| Utilization Factor            | 92.11%                  | 58.01%                          |
+| Max Queue Length              | 20 customers            | 8 customers                     |
+| Abandonment Rate              | N/A                     | 30.40%                          |
+| Lost Revenue                  | N/A                     | $760.00                         |
+| Total Revenue                 | $2,500.00               | $1,740.00                       |
+|                               |                          |                                 |
+| **M/M/2, μ = 15 (Two Servers)**|                         |                                 |
+| Avg. Wait Time                | 0.59 minutes            | 0.25 minutes                    |
+| Avg. System Time              | 4.61 minutes            | 4.11 minutes                    |
+| Utilization Factor            | 32.33%                  | 28.54%                          |
+| Max Queue Length              | 3 customers             | 4 customers                     |
+| Abandonment Rate              | N/A                     | 2.00%                           |
+| Lost Revenue                  | N/A                     | $50.00                          |
+| Total Revenue                 | $2,500.00               | $2,450.00                       |
+
+ Revenue Impact Analysis (With Reneging)
+
+| Configuration Change          | Revenue Impact           |
+|-------------------------------|--------------------------|
+| Faster Service (μ = 20)       | +$210.00                 |
+| Slower Service (μ = 12)       | -$320.00                 |
+| Adding Second Barista         | +$390.00                 |
+
+Key Insights
+
+1. **Customer Reneging Effect**: When customers abandon queues after waiting 5 minutes, wait times decrease dramatically but at the cost of lost revenue.
+
+2. **Service Speed Impact**: Increasing service speed from μ=15 to μ=20 reduces abandonment by 8.4 percentage points, saving $210 in revenue.
+
+3. **Two-Server Configuration**: Adding a second barista provides the best customer experience (lowest wait time) and highest revenue retention (only 2% abandonment), though at higher labor cost.
+
+4. **Congestion Warning**: Slower service (μ=12) creates severe congestion without reneging (34.5-minute wait), and loses 30.4% of customers with reneging.
+
+5. **Utilization Tradeoff**: Reneging significantly reduces server utilization across all configurations, which improves customer experience but may indicate inefficient resource use.

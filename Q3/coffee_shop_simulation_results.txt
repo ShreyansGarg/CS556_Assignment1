@@ -1,0 +1,104 @@
+==============================================
+   COFFEE SHOP QUEUE SIMULATION - NO RENEGING
+==============================================
+
+======== COFFEE SHOP M/M/1 QUEUE SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10 customers/hour
+  - Service Rate (μ): 15 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Total Simulation Time: 53.6039 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0883 hours (5.2986 minutes)
+  2. Average Time in System: 0.1512 hours (9.0734 minutes)
+  3. Utilization Factor: 58.6841%
+  4. Idle Time of Baristas: 41.3159%
+  5. Maximum Queue Length: 10 customers
+  6. Probability of an Empty Queue: 51.3619%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 51
+     - Maximum Queue Length at Peak: 10 customers
+  8. Revenue Analysis:
+     - Total Revenue: $2500.0000
+
+======== COFFEE SHOP M/M/1 QUEUE SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 20.0000 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Total Simulation Time: 49.7094 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0485 hours (2.9113 minutes)
+  2. Average Time in System: 0.1006 hours (6.0382 minutes)
+  3. Utilization Factor: 52.4183%
+  4. Idle Time of Baristas: 47.5817%
+  5. Maximum Queue Length: 5 customers
+  6. Probability of an Empty Queue: 55.2372%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 13
+     - Maximum Queue Length at Peak: 5 customers
+  8. Revenue Analysis:
+     - Total Revenue: $2500.0000
+
+======== COFFEE SHOP M/M/1 QUEUE SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 12.0000 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Total Simulation Time: 48.9845 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.2319 hours (13.9150 minutes)
+  2. Average Time in System: 0.3089 hours (18.5324 minutes)
+  3. Utilization Factor: 78.5530%
+  4. Idle Time of Baristas: 21.4470%
+  5. Maximum Queue Length: 12 customers
+  6. Probability of an Empty Queue: 36.1430%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 23
+     - Maximum Queue Length at Peak: 12 customers
+  8. Revenue Analysis:
+     - Total Revenue: $2500.0000
+
+======== COFFEE SHOP M/M/2 QUEUE SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 15.0000 customers/hour per server
+  - Number of Servers: 2
+  - Number of Customers: 500
+  - Total Simulation Time: 50.7141 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0046 hours (0.2787 minutes)
+  2. Average Time in System: 0.0682 hours (4.0896 minutes)
+  3. Utilization Factor: 31.3108%
+  4. Idle Time of Baristas: 68.6892%
+  5. Maximum Queue Length: 3 customers
+  6. Probability of an Empty Queue: 64.9860%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 16
+     - Maximum Queue Length at Peak: 3 customers
+  8. Revenue Analysis:
+     - Total Revenue: $2500.0000
+
+==============================================
+               COMPARATIVE ANALYSIS          
+==============================================
+
+Average Waiting Time Comparison:
+  - Baseline (M/M/1, μ = 15): 5.30 minutes
+  - Faster Service (M/M/1, μ = 20): 2.91 minutes
+  - Slower Service (M/M/1, μ = 12): 13.91 minutes
+  - Two Baristas (M/M/2, μ = 15 per server): 0.28 minutes
+
+Utilization Factor Comparison:
+  - Baseline (M/M/1, μ = 15): 58.68%
+  - Faster Service (M/M/1, μ = 20): 52.42%
+  - Slower Service (M/M/1, μ = 12): 78.55%
+  - Two Baristas (M/M/2, μ = 15 per server): 31.31%
+

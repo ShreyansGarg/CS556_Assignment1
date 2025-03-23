@@ -1,0 +1,139 @@
+==============================================
+   COFFEE SHOP QUEUE SIMULATION WITH FIXED THRESHOLD RENEGING
+==============================================
+
+======== COFFEE SHOP M/M/1 QUEUE WITH FIXED THRESHOLD RENEGING SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10 customers/hour
+  - Service Rate (μ): 15 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Fixed Abandonment Threshold: 0.0833333 hour(s) (5 minutes)
+  - Total Simulation Time: 50.8736 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0133 hours (0.7990 minutes)
+  2. Average Time in System: 0.0828 hours (4.9708 minutes)
+  3. Utilization Factor: 53.7112%
+  4. Idle Time of Baristas: 46.2888%
+  5. Maximum Queue Length: 7 customers
+  6. Probability of an Empty Queue: 58.4718%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 15
+     - Maximum Queue Length at Peak: 7 customers
+  8. Customer Abandonment:
+     - Total Abandoned Customers: 107
+     - Abandonment Rate: 21.4000%
+     - Lost Revenue Due to Abandonment: $535.0000
+  9. Revenue Analysis:
+     - Total Revenue: $1965.0000
+     - Potential Revenue (if no abandonment): $2500.0000
+
+======== COFFEE SHOP M/M/1 QUEUE WITH FIXED THRESHOLD RENEGING SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 20.0000 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Fixed Abandonment Threshold: 0.0833 hour(s) (5.0000 minutes)
+  - Total Simulation Time: 54.3747 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0148 hours (0.8874 minutes)
+  2. Average Time in System: 0.0690 hours (4.1390 minutes)
+  3. Utilization Factor: 43.6544%
+  4. Idle Time of Baristas: 56.3456%
+  5. Maximum Queue Length: 5 customers
+  6. Probability of an Empty Queue: 60.7843%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 12
+     - Maximum Queue Length at Peak: 5 customers
+  8. Customer Abandonment:
+     - Total Abandoned Customers: 62
+     - Abandonment Rate: 12.4000%
+     - Lost Revenue Due to Abandonment: $310.0000
+  9. Revenue Analysis:
+     - Total Revenue: $2190.0000
+     - Potential Revenue (if no abandonment): $2500.0000
+
+======== COFFEE SHOP M/M/1 QUEUE WITH FIXED THRESHOLD RENEGING SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 12.0000 customers/hour per server
+  - Number of Servers: 1
+  - Number of Customers: 500
+  - Fixed Abandonment Threshold: 0.0833 hour(s) (5.0000 minutes)
+  - Total Simulation Time: 46.7872 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0191 hours (1.1450 minutes)
+  2. Average Time in System: 0.1105 hours (6.6310 minutes)
+  3. Utilization Factor: 62.7308%
+  4. Idle Time of Baristas: 37.2692%
+  5. Maximum Queue Length: 8 customers
+  6. Probability of an Empty Queue: 51.4091%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 15
+     - Maximum Queue Length at Peak: 8 customers
+  8. Customer Abandonment:
+     - Total Abandoned Customers: 179
+     - Abandonment Rate: 35.8000%
+     - Lost Revenue Due to Abandonment: $895.0000
+  9. Revenue Analysis:
+     - Total Revenue: $1605.0000
+     - Potential Revenue (if no abandonment): $2500.0000
+
+======== COFFEE SHOP M/M/2 QUEUE WITH FIXED THRESHOLD RENEGING SIMULATION RESULTS ========
+Simulation Parameters:
+  - Arrival Rate (λ): 10.0000 customers/hour
+  - Service Rate (μ): 15.0000 customers/hour per server
+  - Number of Servers: 2
+  - Number of Customers: 500
+  - Fixed Abandonment Threshold: 0.0833 hour(s) (5.0000 minutes)
+  - Total Simulation Time: 51.3531 hours
+
+Performance Metrics:
+  1. Average Waiting Time in Queue: 0.0043 hours (0.2556 minutes)
+  2. Average Time in System: 0.0766 hours (4.5942 minutes)
+  3. Utilization Factor: 33.8652%
+  4. Idle Time of Baristas: 66.1348%
+  5. Maximum Queue Length: 4 customers
+  6. Probability of an Empty Queue: 64.7887%
+  7. Peak Hour Analysis:
+     - Peak Hour: Hour 34
+     - Maximum Queue Length at Peak: 4 customers
+  8. Customer Abandonment:
+     - Total Abandoned Customers: 19
+     - Abandonment Rate: 3.8000%
+     - Lost Revenue Due to Abandonment: $95.0000
+  9. Revenue Analysis:
+     - Total Revenue: $2405.0000
+     - Potential Revenue (if no abandonment): $2500.0000
+
+==============================================
+               COMPARATIVE ANALYSIS          
+==============================================
+
+Average Waiting Time Comparison:
+  - Baseline (M/M/1, μ = 15): 0.80 minutes
+  - Faster Service (M/M/1, μ = 20): 0.89 minutes
+  - Slower Service (M/M/1, μ = 12): 1.15 minutes
+  - Two Baristas (M/M/2, μ = 15 per server): 0.26 minutes
+
+Abandonment Rate Comparison:
+  - Baseline (M/M/1, μ = 15): 21.40%
+  - Faster Service (M/M/1, μ = 20): 12.40%
+  - Slower Service (M/M/1, μ = 12): 35.80%
+  - Two Baristas (M/M/2, μ = 15 per server): 3.80%
+
+Lost Revenue Comparison:
+  - Baseline (M/M/1, μ = 15): $535.00
+  - Faster Service (M/M/1, μ = 20): $310.00
+  - Slower Service (M/M/1, μ = 12): $895.00
+  - Two Baristas (M/M/2, μ = 15 per server): $95.00
+
+Revenue Impact Analysis:
+  - Additional revenue from faster service: $225.00
+  - Revenue loss from slower service: $360.00
+  - Revenue benefit from adding second barista: $440.00
+
