@@ -1,0 +1,63 @@
+Customers arrived: 312
+Customers served: 306
+Bank Simulation Results
+=======================
+
+Period:  9:00 AM - 11:00 AM (2 tellers)
+-------------------------------------------------
+Total customers in period: 75
+a. Average waiting time: 17.00 minutes
+b. Average time in system: 20.98 minutes
+c. Teller utilization rate: 97.25%
+d. Average queue length: 9.38 customers
+e. Probability of all tellers busy: 92.42%
+
+Period: 11:00 AM - 2:00 PM (4 tellers)
+-------------------------------------------------
+Total customers in period: 105
+a. Average waiting time: 0.94 minutes
+b. Average time in system: 4.47 minutes
+c. Teller utilization rate: 62.99%
+d. Average queue length: 1.39 customers
+e. Probability of all tellers busy: 42.11%
+
+Period: 2:00 PM - 5:00 PM (3 tellers)
+-------------------------------------------------
+Total customers in period: 126
+a. Average waiting time: 4.21 minutes
+b. Average time in system: 7.96 minutes
+c. Teller utilization rate: 87.51%
+d. Average queue length: 2.94 customers
+e. Probability of all tellers busy: 83.53%
+
+Overall Statistics (9:00 AM - 5:00 PM)
+-------------------------------------------------
+Total customers served: 306
+a. Average waiting time: 6.22 minutes
+b. Average time in system: 9.95 minutes
+c. Overall teller utilization rate: 77.30%
+d. Average queue length: 3.97 customers
+e. Probability of all tellers busy: 70.08%
+
+Analysis:
+-------------------------------------------------
+Theoretical utilization rates:
+   9:00 AM - 11:00 AM: 133.33%
+  11:00 AM - 2:00 PM: 66.67%
+  2:00 PM - 5:00 PM: 88.89%
+
+Findings:
+- The  9:00 AM - 11:00 AM period has insufficient tellers, as the theoretical utilization exceeds 100%.
+- The period with the longest average waiting time is  9:00 AM - 11:00 AM.
+
+Recommendations:
+- Increase the number of tellers during  9:00 AM - 11:00 AM from 2 to at least 3.
+- Proposed optimal teller allocation (maintaining total of 25 teller-hours):
+   9:00 AM - 11:00 AM: 2 -> 4 tellers
+  11:00 AM - 2:00 PM: 4 -> 3 tellers
+  2:00 PM - 5:00 PM: 3 -> 3 tellers
+
+Additional recommendations:
+- Consider implementing an appointment system for non-urgent transactions to distribute customer arrivals more evenly.
+- Evaluate cross-training employees to flexibly adjust staffing during unexpected peak times.
+- Monitor customer arrival patterns regularly to refine staffing models as patterns change.
