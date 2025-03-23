@@ -1,0 +1,3 @@
+Avg_Waiting_Time_Minutes 5.76803
+Utilization 90.2514
+Rejection_Probability 5.86967

@@ -1,0 +1,64 @@
+==== Call Center M/M/1/5 Queue Simulation Report ====
+
+Simulation Parameters:
+- Arrival Rate (λ): 20 calls/hour
+- Service Rate (μ): 24 calls/hour
+- System Capacity (c): 5 (including customer being served)
+- Simulation Time: 1000 hours
+
+Performance Metrics:
+- Average Waiting Time in Queue: 0.0674 hours (4.0429 minutes)
+- Average Time in System: 0.1090 hours (6.5429 minutes)
+- Agent Utilization Rate: 88.48%
+- Average Number of Customers in Queue: 1.2057
+- Probability of System Being Full: 9.48%
+- Probability of Customer Rejection: 8.74%
+
+Simulation Statistics:
+- Total Customers Arrived: 21778
+- Customers Served: 17971
+- Customers Rejected: 1903
+
+
+---- Theoretical Results for M/M/1/5 Queue ----
+Theoretical Utilization: 74.9412%
+Theoretical Avg. Number in Queue: 1.2294
+Theoretical Avg. Number in System: 1.9788
+Theoretical Avg. Waiting Time (hours): 0.0684 (4.1013 minutes)
+Theoretical Avg. System Time (hours): 0.1100 (6.6013 minutes)
+Theoretical Rejection Probability: 10.0706%
+Theoretical Probability of Full System: 10.0706%
+
+---- Analysis of Varying System Capacity ----
+  Capacity  Avg Wait(min) Utilization(%)   Rejection(%)
+         3           2.11          84.95          14.96
+         4           3.18          87.38          11.67
+         5           4.25          88.91           9.73
+         6           4.91          89.55           6.99
+         7           5.77          90.25           5.87
+
+==== Recommendations ====
+
+1. Optimal System Capacity:
+   Based on the simulation results, a system capacity of 6 is recommended to maintain an average waiting time of less than 5 minutes while minimizing rejections.
+
+2. Capacity Planning Strategies:
+   - Consider implementing a dynamic capacity system that can adjust based on demand patterns.
+   - Monitor the trade-off between waiting time and rejection probability regularly.
+   - For periods of high call volume, consider temporary increases in system capacity.
+
+3. Performance Optimization:
+   - If the agent utilization is consistently high (>85%), consider adding another agent.
+   - Implement a callback system for customers when the system is near capacity.
+   - Consider specialized training for the agent to reduce service time without compromising quality.
+   - Implement a pre-recorded information system to handle common queries before connecting to the agent.
+
+4. Assumptions:
+   - Poisson arrival process (exponential inter-arrival times)
+   - Exponential service times
+   - First-come, first-served queue discipline
+   - Stationary arrival and service rates (no time-of-day variations)
+   - No customer abandonment (reneging or balking)
+   - Single service channel
+
+==== End of Report ====
